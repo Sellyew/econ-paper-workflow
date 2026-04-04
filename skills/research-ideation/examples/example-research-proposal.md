@@ -1,51 +1,62 @@
-# Example Research Proposal: Broadband Rollout And Labor Market Adjustment
+# Example Research Proposal
+
+## Working Title
+
+Broadband Expansion and Labor-Market Adjustment in Rural China
 
 ## Question
 
-How does broadband expansion affect local labor market adjustment in smaller municipalities?
+Does rural broadband rollout improve local labor-market outcomes by expanding job search and market access, or do the gains mainly reflect migration and compositional change?
 
-## Why It Matters
+## Motivation
 
-- broadband policy is often justified as a local development tool
-- the mechanism may run through job search, remote work, firm creation, or migration
-- policy relevance is high, but the empirical channel is often unclear
+Digital infrastructure is often justified as a tool for reducing spatial inequality. The policy relevance is clear, but the mechanism is not. A rise in local earnings may reflect better local matching, better outside options, selective migration, or measurement changes in recorded activity.
 
-## Identification Sketch
+## Contribution
 
-Primary design:
+This project aims to contribute by:
 
-- staggered rollout of broadband infrastructure across municipalities
-- municipality and year fixed effects
-- event-study specification around rollout timing
+1. estimating the average effect of broadband rollout on employment, earnings, and firm entry
+2. testing whether the timing and heterogeneity fit a labor-market access channel
+3. distinguishing local adjustment from migration-based composition
 
-Key threats:
+## Identification Strategy
 
-- rollout may target municipalities already on different growth paths
-- treatment timing may correlate with local political or fiscal capacity
+Preferred design:
 
-Planned responses:
+- county-by-year panel
+- event-study around broadband rollout
+- county and year fixed effects
+- province-by-year controls where needed
 
-- pre-trend analysis
-- controls for pre-period municipal trends where defensible
-- robustness to alternative rollout definitions
-- placebo timing exercises
+Diagnostics:
+
+- pre-trend test
+- timing robustness
+- alternative clustering levels
+- placebo outcomes that should not move immediately
+
+Fallback design:
+
+- instrument rollout with engineering-cost or backbone-distance measures if rollout timing appears too endogenous
 
 ## Data Plan
 
-- broadband infrastructure rollout records
-- labor market or social security microdata
-- municipality finance and demographic controls
-- geographic covariates for rollout feasibility
+- broadband rollout dates from administrative or provider records
+- county labor outcomes from statistical yearbooks or labor-market administrative data
+- firm entry from business registration data
+- migration or hukou-adjustment proxy if available
 
-## Main Outputs
+## Main Risks
 
-- `literature-review.md`
-- `identification-map.md`
-- `data-source-plan.md`
-- `research-design.md`
+- rollout timing may respond to expected local growth
+- measured coverage may not equal actual household access
+- labor-market outcomes may shift through migration rather than local adjustment
 
-## Expected Contribution
+## First Table Sequence
 
-- clarifies whether connectivity improves adjustment margins in lagging areas
-- separates immediate employment responses from medium-run reallocation
-- contributes to place-based policy and digital infrastructure literatures
+1. institutional timeline and descriptive rollout table
+2. baseline event-study estimates
+3. robustness to sample, controls, and clustering
+4. heterogeneity by pre-rollout market access
+5. mechanism table on firm entry or job-search proxies

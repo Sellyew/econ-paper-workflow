@@ -17,6 +17,15 @@ Stop rules:
 - if score >= `80` but < `90`, mark as usable but not submission-ready
 - if 5 rounds have been completed without approval, stop and report remaining blockers
 
+Hard gates include:
+
+- identification logic is coherent
+- tables, text, and appendix do not contradict each other
+- citations are verifiable
+- replication instructions are minimally complete
+- table layout, notes, and sample disclosure meet economics-paper standards
+- adjusted specifications do not silently change samples without explanation
+
 Output requirements:
 
 - save the report under `quality_reports/verifier/`

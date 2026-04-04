@@ -1,43 +1,39 @@
-# Literature Search Strategies for Empirical Economics
+# Literature Search Strategies
 
-## Search Order
+## Start Broad
 
-1. broad discovery on Google Scholar
-2. economics-specific search on RePEc / IDEAS
-3. NBER working papers and AEA journals
-4. field journals and recent working-paper versions
+Search by:
 
-## Query Construction
-
-Build searches around:
-
-- outcome
+- topic
 - treatment or policy
-- geography or institutional setting
-- empirical design
-- population or market
+- outcome
+- setting
+- identification strategy
 
-Examples:
+## Then Narrow
 
-- `"minimum wage" employment difference-in-differences`
-- `"school accountability" event study district`
-- `"housing voucher" neighborhood outcomes IV`
-- `"cash transfer" RCT labor supply`
+Group search results by:
 
-## Screening Rules
+- classic papers
+- recent papers
+- design families
+- datasets
+- conflicting findings
 
-- keep seminal papers even if they are older
-- capture the latest working-paper version when relevant
-- record publication status
-- note the design used by each paper
+## Search Patterns
 
-## Organizing the Review
+- topic + outcome
+- topic + identification strategy
+- policy name + data source
+- author names from classic papers
+- citation chaining from the most relevant paper
 
-Do not organize only by chronology.
+## Keep A Short Extraction Sheet
 
-Prefer:
+For each paper, record:
 
-- by identification strategy
-- by dataset or setting
-- by main empirical finding
-- by unresolved disagreement
+- citation
+- design
+- dataset
+- main result
+- why it matters for your project

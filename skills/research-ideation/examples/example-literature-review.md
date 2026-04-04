@@ -1,54 +1,79 @@
-# Example Literature Review: Municipal Tax Incentives And Firm Entry
+# Example Literature Review
 
-## Research Question
+## Topic
 
-Do municipal tax incentives increase firm entry, and through which margins do they operate?
+How broadband rollout affects local labor-market adjustment in rural counties.
 
-## Literature Map
+## Core Question
 
-### 1. Classic Policy Incidence And Local Public Finance
+Does improved broadband access raise employment, earnings, or firm entry in places with weak pre-existing market access?
 
-- focus: how local tax policy shapes location decisions
-- contribution to this project: motivates why firm entry may respond to municipal incentives
+## Foundational Papers
 
-### 2. Place-Based Policy And Firm Location
-
-- focus: special zones, local subsidies, or tax relief programs
-- identification families:
-  - staggered policy adoption
-  - border discontinuities
-  - rule-based program eligibility
-
-### 3. Administrative Data Studies Of Firm Dynamics
-
-- focus: business registry data, employer-employee records, municipal finance data
-- contribution to this project: shows what outcomes and sample restrictions are feasible
+1. Early infrastructure papers show that transport and communication investments can change local market access, labor allocation, and productivity.
+2. Later place-based and digital-access papers study whether broadband changes remote work, job search, entrepreneurship, or human-capital investment.
 
 ## Identification Buckets
 
-### DID / Event Study
+### Policy Rollout Designs
 
-- useful when adoption timing differs across municipalities
-- key concern: differential pre-trends and selective policy timing
+- staggered broadband subsidy rollout
+- eligibility thresholds for infrastructure grants
+- quasi-random timing of backbone expansion
 
-### RDD / Eligibility Thresholds
+Strength:
 
-- useful when incentive access depends on a cutoff
-- key concern: manipulation around the threshold
+- direct policy variation
 
-### Border Designs
+Main risk:
 
-- useful when adjacent municipalities face different incentive regimes
-- key concern: sorting and concurrent local policy changes
+- rollout timing may correlate with local growth prospects
 
-## Open Questions
+### Engineering Or Geography Instruments
 
-- are incentives shifting firm entry or simply relocating firms across nearby municipalities?
-- do incumbent firms respond differently from new entrants?
-- are short-run gains offset by weak persistence?
+- terrain-based cost shifters
+- distance to backbone nodes
+- historical telecom routes
 
-## This Project's Likely Contribution
+Strength:
 
-- combine administrative firm records with municipal policy timing
-- compare extensive-margin entry effects with persistence outcomes
-- distinguish headline entry effects from spatial displacement
+- strong first stage if engineering constraints matter
+
+Main risk:
+
+- exclusion restriction may fail if the geography measure also proxies for broader development
+
+### Event-Study Designs
+
+- county-by-year panels around coverage expansion
+
+Strength:
+
+- transparent timing patterns
+
+Main risk:
+
+- differential pre-trends and endogenous rollout timing
+
+## Data Patterns In The Literature
+
+- county-level employment and earnings from public labor-market sources
+- establishment counts from business registers
+- provider coverage maps or administrative telecom records
+- demographic controls from census products
+
+## What The Literature Already Knows
+
+- digital infrastructure can affect job search and market access
+- effects are heterogeneous across skill groups and local labor-market structure
+- timing and measurement of true access remain major empirical problems
+
+## Open Opportunity
+
+The literature is still weak on separating:
+
+- remote-work channels
+- firm-entry channels
+- migration-composition channels
+
+A credible contribution would combine rollout timing with labor-market outcomes and one mechanism dataset rather than only adding another average treatment effect.

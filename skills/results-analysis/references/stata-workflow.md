@@ -1,30 +1,19 @@
 # Stata Workflow
 
-Default to a staged workflow instead of one giant do-file.
+Suggested do-file order:
 
-## Recommended Order
-
-1. `00_setup.do`
-2. `01_import_raw.do`
-3. `02_clean.do`
-4. `03_merge_build_sample.do`
-5. `04_construct_variables.do`
+1. `00_globals_and_paths.do`
+2. `01_raw_import_and_cleaning.do`
+3. `02_merge_and_sample_construction.do`
+4. `03_variable_construction.do`
+5. `04_descriptives_and_balance.do`
 6. `05_main_results.do`
 7. `06_robustness.do`
-8. `07_heterogeneity_mechanisms.do`
-9. `08_export_tables_figures.do`
+8. `07_heterogeneity_and_mechanisms.do`
+9. `08_export_tables_and_figures.do`
 
-## Good Practices
+For each step, keep:
 
-- open a log for each major stage
-- use stable output filenames
-- separate raw, intermediate, and analysis data
-- preserve merge diagnostics
-- store table exports with names that match the manuscript
-
-## What to Document
-
-- required packages such as `reghdfe`, `ivreg2`, `estout`
-- path assumptions
-- randomization or simulation seeds if applicable
-- restricted-data instructions when code cannot be run end-to-end by others
+- a log file
+- clear input and output datasets
+- notes on destructive versus reversible steps

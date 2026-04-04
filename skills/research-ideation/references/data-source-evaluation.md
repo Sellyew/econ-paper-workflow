@@ -1,37 +1,48 @@
 # Data Source Evaluation
 
-Before committing to a design, evaluate the data source along these dimensions.
+Evaluate candidate datasets before committing to an empirical design.
 
-## Access
+## Access And Restrictions
 
-- public, licensed, restricted, or administrative
-- whether the data can be shared in a replication package
-- expected delays, approvals, or confidentiality barriers
+- public
+- licensed
+- restricted administrative
+- field-collected
 
-## Structure
+## Unit Of Observation
 
-- unit of observation
-- time frequency
-- panel versus repeated cross section
-- merge keys and likely linkage problems
+Check whether the data match the estimating unit:
 
-## Content
+- individual
+- household
+- firm
+- school
+- county
+- policy cell
 
-- treatment availability
-- outcome quality
-- control variables
-- geography or institutional identifiers
-- sample size and subgroup support
+## Coverage
 
-## Reliability
+- national or regional
+- balanced over time or changing coverage
+- formal-sector only or broader coverage
+- missing key populations
 
-- likely missingness
-- measurement error
-- coding changes across waves
-- attrition or survivorship bias
+## Merge Feasibility
 
-## Replication Implications
+- stable identifiers
+- consistent time fields
+- geography changes over time
+- plausible many-to-one merges without duplicate inflation
 
-- what raw files can be redistributed
-- what must be documented instead of shared
-- what README notes are required
+## Measurement Quality
+
+- treatment measured directly or proxied
+- outcome measured from administrative records or self-report
+- missingness pattern
+- reporting incentives or strategic mismeasurement
+
+## Replication Value
+
+- can the access process be documented
+- can variable construction be explained clearly
+- can a restricted-data version of the workflow still be described for replication

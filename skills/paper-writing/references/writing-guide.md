@@ -35,7 +35,7 @@ Do not hide the design inside generic methods language.
 State:
 
 - the estimating equation or design
-- FE and controls
+- fixed effects and controls
 - clustering choice
 - assumptions
 - why the diagnostics speak to those assumptions
@@ -53,7 +53,7 @@ For each main result:
 
 ## Tone
 
-- avoid benchmark language
+- avoid inflated performance language
 - avoid claiming certainty beyond the design
 - keep mechanism evidence narrower than the main result
 - keep policy language conditional when external validity is limited

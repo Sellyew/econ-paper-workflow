@@ -1,32 +1,17 @@
 # Robustness Patterns
 
-Use robustness checks to test the design's weak spots, not to generate a random appendix.
+Choose checks that target the main threat.
 
-## Typical Layers
+## Common Robustness Families
 
-### Sample Robustness
-
-- alternative age, region, or sector restrictions
-- balanced versus unbalanced panels
-- excluding influential observations
-
-### Variable Robustness
-
-- alternative outcome definitions
-- alternative treatment timing
-- different winsorization or trimming rules
-
-### Design Robustness
-
-- alternative FE structures
 - alternative clustering levels
-- placebo treatments or outcomes
-- pre-trend checks
-- bandwidth or event-window sensitivity
+- alternative sample windows
+- alternative treatment definitions
+- placebo outcomes or placebo timing
+- sensitivity to outliers and winsorization
+- alternative fixed-effects structures
+- balance or composition checks where selection is a concern
 
-### Interpretation Robustness
+## Rule
 
-- show whether magnitudes are economically meaningful
-- explain when significance changes but sign and size remain similar
-
-Every check should answer: what concern does this specification address?
+Every robustness table should answer a specific challenge to the design rather than exist for volume.

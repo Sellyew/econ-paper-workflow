@@ -1,45 +1,23 @@
 # Identification Strategy Guide
 
-The objective is to make the source of credible variation explicit before designing regressions.
+Choose the design that matches the available variation, not the one that sounds most prestigious.
 
 ## Common Designs
 
-### RCT
+- `DID` and event study for staggered policy or exposure timing
+- `IV` when treatment is endogenous but a credible source of exogenous variation exists
+- `RDD` when institutional thresholds create quasi-random assignment
+- panel fixed effects when within-unit changes are informative
+- matching or reweighting when selection on observables is the best available design
 
-- treatment assignment is randomized
-- check compliance, attrition, spillovers, and treatment timing
+## Questions To Ask
 
-### DID / Event Study
+- what variation identifies the estimate
+- what assumptions make that variation credible
+- what threats are first order
+- what diagnostics speak directly to those threats
+- what parameter is being estimated and for whom
 
-- define treated and comparison groups
-- justify timing
-- inspect pre-trends and anticipation
-- state omitted event-time period
+## Warning
 
-### IV
-
-- define instrument relevance
-- defend exclusion
-- state the affected margin and likely LATE interpretation
-
-### RDD
-
-- define running variable and cutoff
-- justify bandwidth and polynomial choices
-- inspect manipulation and balance near the cutoff
-
-### Matching / Reweighting
-
-- state overlap assumptions
-- show balance diagnostics
-- clarify whether matching is preprocessing or main identification
-
-## Minimum Output
-
-For every candidate design, write:
-
-- identifying variation
-- key assumption
-- most likely threat
-- first diagnostic or falsification exercise
-- backup design if the preferred one fails
+Never treat robustness checks as a substitute for identification logic.

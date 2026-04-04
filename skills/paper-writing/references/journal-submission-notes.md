@@ -1,12 +1,12 @@
 # Journal Submission Notes
 
-Treat empirical economics journals as slower, more iterative, and more appendix-heavy than conference workflows.
+Empirical economics journals are iterative, appendix-heavy, and often require detailed revision rounds.
 
 ## Default Expectations
 
 - referee reports may require new analyses, not just clarification
 - appendices often carry substantial supporting material
-- working-paper versions matter for visibility before journal acceptance
+- working-paper versions matter before final publication
 - replication expectations are increasingly explicit
 
 ## Before Submission
@@ -19,5 +19,5 @@ Treat empirical economics journals as slower, more iterative, and more appendix-
 ## For Revision Rounds
 
 - maintain a comment-to-change map
-- preserve prior table numbering where possible
-- keep an archive of old drafts and old tables
+- preserve table numbering where possible
+- archive old drafts and old tables

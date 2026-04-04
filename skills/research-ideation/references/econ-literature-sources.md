@@ -1,32 +1,19 @@
 # Economics Literature Sources
 
-Use this source order by default:
+Use these sources in roughly this order:
 
-1. Google Scholar for broad discovery
-2. RePEc / IDEAS for economics coverage
-3. NBER Working Papers for frontier empirical work
-4. AEA journals and top field journals for published reference papers
-5. journal websites and authors' pages for latest versions
+1. publisher pages and journal websites for final metadata
+2. `RePEc` / `IDEAS` for economics versions and working-paper series
+3. `NBER`, `IZA`, `CEPR`, and `SSRN` for working-paper circulation
+4. `Google Scholar` for broad discovery
+5. policy reports or institutional background sources only when they support context rather than citation substitution
 
-## Source Priorities
+## What To Record For Each Paper
 
-- include both classic and current papers
-- check whether a working paper has a published version
-- record journal status when it affects how the paper should be cited
-- prefer papers with identifiable empirical designs over vague relevance-only matches
-
-## Screening Questions
-
-- What is the precise research question?
-- What empirical design does the paper use?
-- What data source does it rely on?
-- What is the main finding?
-- What threat to identification remains?
-
-## Suggested Review Structure
-
-- seminal papers
-- recent papers
-- grouped by identification strategy
-- grouped by data source or institutional setting
-- key disagreements and unresolved issues
+- full citation
+- publication status
+- identification strategy
+- dataset
+- sample or setting
+- main finding
+- limitation relevant to the new project

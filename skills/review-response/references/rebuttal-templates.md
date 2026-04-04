@@ -1,6 +1,6 @@
 # Economics Response Letter Templates
 
-These are journal-style response templates, not conference rebuttal templates.
+These are journal-style response templates.
 
 ## Per-Comment Skeleton
 
@@ -43,5 +43,5 @@ We agree with the concern and have incorporated part of the requested analysis. 
 ## Decline With Justification
 
 ```markdown
-We understand the reviewer's suggestion, but we do not adopt it because it would change the estimand / weaken identification / require unavailable data. We have instead clarified this scope condition in the manuscript and added a short discussion of the tradeoff.
+We understand the reviewer's suggestion, but we do not adopt it because it would change the estimand, weaken identification, or require unavailable data. We have instead clarified this scope condition in the manuscript and added a short discussion of the tradeoff.
 ```

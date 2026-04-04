@@ -1,7 +1,7 @@
 ---
 name: paper-writing
-description: Use when the user needs to draft or revise an empirical economics paper, write sections such as Introduction, Data, Empirical Strategy, Main Results, Mechanisms, Robustness, or prepare journal-ready appendices, JEL codes, and data/code disclosure notes. Handles Chinese prompts such as "实证论文", "识别策略", "主结果", "附录表", and "投稿修改".
-version: 1.1.0
+description: Use when the user needs to draft or revise an empirical economics paper, write sections such as Introduction, Data, Empirical Strategy, Main Results, Mechanisms, or Robustness, or prepare appendices, JEL codes, and data/code disclosure notes.
+version: 1.2.0
 ---
 
 # Empirical Economics Paper Writing
@@ -10,7 +10,7 @@ This is the default writing workflow for empirical economics papers.
 
 ## Default Paper Structure
 
-Use this section order unless the user specifies a journal template:
+Use this section order unless the user specifies another journal structure:
 
 1. `Introduction`
 2. `Institutional background / context`
@@ -21,8 +21,6 @@ Use this section order unless the user specifies a journal template:
 7. `Robustness`
 8. `Conclusion`
 9. `Appendix`
-
-If the paper is short, combine sections carefully. Do not collapse identification into vague "methods" language.
 
 The default template path is:
 
@@ -38,9 +36,7 @@ Always keep these aligned:
 - coefficient interpretation
 - table and appendix references
 
-The default standard is economics-journal clarity, not conference-style hype.
-
-## What to Draft
+## What To Draft
 
 When the user gives enough context, proactively draft:
 
@@ -51,7 +47,7 @@ When the user gives enough context, proactively draft:
 - appendix roadmap
 - data and code availability statements
 
-Flag uncertainty when it affects identification, sample definition, or interpretation. Do not block on small wording choices.
+Flag uncertainty when it affects identification, sample definition, or interpretation.
 
 ## Introduction Standard
 
@@ -63,8 +59,6 @@ The introduction should establish:
 - how the paper relates to the literature
 - what the headline findings are
 
-Avoid ML-style framing such as benchmark leadership, ablation summaries, or model novelty claims unless the paper is actually about that.
-
 ## Data Section Standard
 
 The Data section should make replication possible.
@@ -75,7 +69,7 @@ Include:
 - unit of observation
 - sample window
 - sample restrictions
-- matching or merge logic
+- merge logic
 - construction of treatment, outcomes, and controls
 - summary statistics and missingness notes
 
@@ -92,8 +86,6 @@ Include:
 - threats to validity
 - key diagnostic or falsification exercises
 
-If the identifying assumption is fragile, say so and connect robustness checks to that fragility.
-
 ## Results Standard
 
 Write around tables, not around vague claims.
@@ -108,17 +100,7 @@ For each core result:
 
 Do not overstate mechanism evidence or treat heterogeneous correlations as structural proof.
 
-## Table Layout Standard
-
-Default to economics-journal table design:
-
-- one dependent variable or one specification family per column
-- `Controls`, `FE`, and clustering disclosed with `Yes/No` rows
-- `IV` results shown as `Panel A/B/C` or across separate reduced-form / first-stage / second-stage tables
-- adjusted columns should use a harmonized sample rule rather than silently changing `N`
-- if adjusted controls are substantively discussed, include a separate control-coefficient table in the main text or appendix
-
-## Appendix and Disclosure
+## Appendix And Disclosure
 
 Default appendix content:
 
@@ -132,21 +114,18 @@ Default appendix content:
 
 Also prepare:
 
-- `JEL` codes if the user targets economics journals
+- `JEL` codes when relevant
 - data and code availability text
 - notes on confidential or restricted-access data
-- the appropriate outline from `templates/econ/`
 
 ## Citation Rule
 
 Never invent citations or BibTeX. Verify papers before citing, especially when discussing classic economics references or working-paper versions.
 
-## References to Load On Demand
+## References To Load On Demand
 
 - `references/econ-paper-structure.md`
 - `references/econ-writing-patterns.md`
 - `references/journal-submission-notes.md`
 - `references/data-code-disclosure.md`
 - `references/citation-workflow.md`
-
-Use the conference-template material only if the user explicitly targets a non-economics venue.

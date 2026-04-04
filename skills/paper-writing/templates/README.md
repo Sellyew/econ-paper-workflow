@@ -2,17 +2,21 @@
 
 This directory is organized as:
 
-- `econ/` for default empirical economics workflows
+- `econ/` for the default empirical economics workflow
 
 ## Default Path
 
-For this repository, start with:
+Start with:
 
 - `econ/README.md`
+
+Archived non-default templates live under:
+
+- `../../../archive/skills/paper-writing-templates-non-econ/`
 
 That entrypoint covers:
 
 - working paper structure
-- economics journal submission prep
+- journal submission preparation
 - appendix planning
 - response-letter scaffolding
